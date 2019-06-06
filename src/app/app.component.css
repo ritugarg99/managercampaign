@@ -1,0 +1,10 @@
+p {
+  font-family: Lato;
+}
+.container, .list{
+    width: 100%;
+}
+.container{
+    margin-left: 3%;
+    margin-right: 1%;
+}

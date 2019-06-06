@@ -1,0 +1,81 @@
+<h1 class="title">Manage Campaigns</h1>
+
+<div id="dialog" title="Campaign Details">
+    <ul>
+        <li>Date: {{date}} </li>
+        <li>Campaign: {{campaign}}</li>
+        <li>Pricing: {{pricing}}</li> 
+    </ul>
+</div>
+
+<div class='manage-campaign'>
+    <div class='row row-header'>
+      <div class='date-column'>
+        <div class='column'>
+          Date
+        </div>
+      </div>
+      <div class='campaign-column'>
+        <div class='column'>
+         Campaign
+        </div>
+      </div>
+      <div class='view-column'>
+        <div class='column'>
+          View
+        </div>
+      </div>
+      <div class='actions-column'>
+        <div class='column'>
+          Actions
+        </div>
+      </div>
+    </div>
+
+    <div *ngFor="let campaign of campaigns, let i of index" class='row opener' onclick= "showData(i)">
+        <div class='date-column'>
+          <div class='column'>
+            <p>Date: <input type="text" class="datepicker"></p>
+            <div class="diff">{{campaign.diffDays}} ago</div>
+          </div>
+        </div>
+        <div class='campaign-column'>
+          <div class='column'>
+            {{campaign.campaign}}
+          </div>
+        </div>
+        <div class='view-column'>
+          <div class='column'>
+            <i class="material-icons">
+              monetization_on
+              </i>
+              View Pricing
+          </div>
+        </div>
+        <div class='actions-column'>
+          <div class='row1'>
+            <i class="material-icons">
+              file_copy
+              </i>
+            <i class="material-icons">
+              network_cell
+              </i>
+              <mat-datepicker #picker></mat-datepicker>
+              <i class="material-icons" >
+                calendar_today
+                </i>
+                <div class="mat-app-background basic-container">
+                  <!-- <mat-form-field>
+                    <input matInput [matDatepicker]="picker" placeholder="">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field> -->
+                </div>
+               
+                
+          </div>
+        </div>
+      </div>
+
+     
+  </div>

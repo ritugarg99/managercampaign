@@ -1,0 +1,64 @@
+
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+ 
+    align-items: center;
+    justify-items: center;
+  } 
+  .row-header{
+    border-top: 1px solid grey;
+  }
+  
+  .row1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  } 
+  .row:nth-child(2n) {  
+    background-color: antiquewhite;
+  }
+  .row:nth-child(2n+1) {  
+    background-color: ghostwhite;
+  }
+  .material-icons{
+   margin-right: 10px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .date-column {
+    height: 100px;
+    width: 20%;
+
+  }
+  
+  .campaign-column {
+    height: 100px;
+    width: 30%;
+  }
+  
+  .view-column {
+    height: 100px;
+    width: 20%;
+  }
+
+  .actions-column {
+    height: 100px;
+    width: 30%;
+  }
+  .title, .manage-campaign{
+      align-self: center;   
+  }
